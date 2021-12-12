@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+   
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  :root {
+    --maincolor: rgb(255, 82, 0);
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+/********************* some rules  *******************************/
+.navbar-light .navbar-brand,
+.offcanvas-title,
+.dropdown-item:hover {
+  color: var(--maincolor);
+}
+
+.navbar-light .navbar-brand{
+  font-weight: bold;
+  font-size: 25px;
+}
+.btn-outline-success {
+  color: var(--maincolor);
+  border-color: var(--maincolor);
+  margin-top: 10px;
+}
+.btn-outline-success:hover {
+  background-color: var(--maincolor);
+}
+.btn-outline-success a{
+    text-decoration: none;
+    color:var(--maincolor);
+}
+.btn-outline-success a:hover  {
+    color: white;
+  }
+  
+/******************** end nav ***********************************/ 
+.intro {
+    background-image: url("https://preview.colorlib.com/theme/meal2/images/xhero_bg.jpg.pagespeed.ic.08xBTGP0Gm.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 700px;
+    width: auto;
+    position: relative;
+    transition: all 2s ease-in-out;
+  }
+  .intro::before{
+      background-color: black;
+      position: absolute;
+      content: "";
+      opacity: 0.5;
+      top:0; 
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+  }
+  .intro_main{
+      position: relative;
+      z-index: 2;
+      min-height: 678px;
+  }
+  .intro .some_words {
+    padding-top: 50px;
+    color: white;
+    font-weight: bold;
+  }
+  .intro .some_words h6 {
+    font-style: italic;
+    font-size: 25px;
+  }
+
+  .intro .some_words h2 {
+    margin-top: 10px;
+    font-size: 50px;
+    font: weight 300px;
+    display: inline-flex;
+  }
+  .intro .some_words h2 span{
+      color:var(--maincolor);
+      font-size: 50px;
+      font-weight: bold;
+      margin-left: 10px;
+  }
+  .intro .some_words a {
+    text-decoration: none;
+  }
+  .intro .some_words span {
+    font-size: 25px;
+    display: block;
+    margin-bottom: 40px;
+  }
+  .intro .some_words button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    background-color: var(--maincolor);
+    color: white;
+  }
+  .intro .social {
+    position: absolute;
+    bottom:20px;
+    right: 20px;
+  }
+  .intro .social i {
+    margin-left: 15px;
+  }
+  /*************************** end intro section **************************/ 
+  .booking{
+      margin-top: 50px;
+  }
+  .booking i {
+      margin-right: 20px;
+      font-size: 20px;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #ff5200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all .3s;
+    color: #fff;
+  }
+  .booking span{
+    font-weight: 600;
+  }
+  .booking .details div{
+margin-top: 25px;
+  }
+  
+.col-md-6{
+    background: #fff;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.contact-form label{
+    font-weight:600;
+}
+.contact-form button{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    background-color: var(--maincolor);
+    color: white;
+    
+}
+.contact-form button:focus{
+    box-shadow:none;
+}
+.contact-form{
+    margin-top: 20px;
+}
+.contact-form .form-group{
+    margin-bottom: 20px;
+}
